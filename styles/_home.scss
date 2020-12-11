@@ -1,0 +1,64 @@
+@import "_variables";
+@import "_mixins";
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: $primary-color;
+  color: $white;
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+    .header__left {
+      margin-top: 50px;
+      .logo {
+        font-size: 30px;
+        font-weight: 900;
+      }
+    }
+    .header__right {
+      margin-top: 20px;
+      display: flex;
+      align-items: space-between;
+      .linkedin {
+        margin-right: 30px;
+        font-size: 25px;
+        height: 24px;
+        width: 24px;
+      }
+      .github {
+        margin-right: 30px;
+        font-size: 24px;
+      }
+      .gmail {
+        font-size: 23px;
+      }
+    }
+  }
+  .welcome-container {
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .welcome-container__hello {
+      width: 100%;
+      font-size: 30px;
+      margin-bottom: 30px;
+      font-weight: 400;
+    }
+    .welcome-container__description {
+      font-weight: 700;
+      font-size: 39px;
+    }
+    .btn-blue {
+      margin-top: 60px;
+      max-width: 200px;
+      @include btn($secondary-color, $white, 20px);
+    }
+  }
+}
