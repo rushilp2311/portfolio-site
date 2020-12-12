@@ -1,47 +1,11 @@
 @import "_variables";
 @import "_mixins";
 .container {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  background-color: $primary-color;
-  color: $white;
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p {
-      text-align: center;
-    }
-    .header__left {
-      margin-top: 50px;
-      .logo {
-        font-size: 30px;
-        font-weight: 900;
-      }
-    }
-    .header__right {
-      margin-top: 20px;
-      display: flex;
-      align-items: space-between;
-      .linkedin {
-        margin-right: 30px;
-        font-size: 25px;
-        height: 24px;
-        width: 24px;
-      }
-      .github {
-        margin-right: 30px;
-        font-size: 24px;
-      }
-      .gmail {
-        font-size: 23px;
-      }
-    }
-  }
+  margin: 50px 25px;
+  color: $primary-color;
+
   .welcome-container {
-    margin: 50px 20px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,13 +16,67 @@
       font-weight: 400;
     }
     .welcome-container__description {
-      font-weight: 700;
+      width: 100%;
+      font-weight: 500;
       font-size: 39px;
     }
     .btn-blue {
-      margin-top: 60px;
+      margin-top: 40px;
       max-width: 200px;
+      a {
+        text-decoration: none;
+        color: $white;
+      }
       @include btn($secondary-color, $white, 20px);
+    }
+    .btn-blue:hover {
+      transition-duration: 0.4s;
+      background-color: darken($color: $secondary-color, $amount: 10);
+    }
+    .project-link {
+      margin-top: 50px;
+      font-size: 24px;
+      text-decoration: underline;
+    }
+  }
+}
+@media (min-width: 720px) {
+  .container {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .welcome-container {
+      max-width: 70%;
+      margin-top: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .welcome-container__hello {
+        text-align: left;
+        width: 100%;
+        font-size: 40px;
+        margin-bottom: 30px;
+        font-weight: 400;
+      }
+      .welcome-container__description {
+        width: 100%;
+        font-weight: 500;
+        font-size: 59px;
+        text-align: left;
+      }
+      .btn-blue {
+        margin-top: 80px;
+      }
+      .project-link {
+        margin-top: 150px;
+        width: 100%;
+        text-align: center;
+        font-size: 44px;
+        text-decoration: underline;
+      }
     }
   }
 }

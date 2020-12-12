@@ -1,0 +1,21 @@
+@import "_variables";
+@import "_mixins";
+
+.about-container {
+  margin: 50px 25px;
+  .about-section {
+    .image-container {
+      .image {
+        border-radius: 50%;
+      }
+    }
+    .about-info {
+      margin-top: 20px;
+      p:nth-child(1) {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
