@@ -16,15 +16,21 @@ const Header = () => {
             <p>rushilp2311@gmail.com</p>
           </div>
           <div className="header__right">
-            <span className="linkedin">
-              <AiFillLinkedin />
-            </span>
-            <span className="github">
-              <FaGithubSquare />
-            </span>
-            <span className="gmail">
-              <SiGmail />
-            </span>
+            <Link href="https://www.linkedin.com/in/rushil-patel-062054bb/">
+              <span className="linkedin">
+                <AiFillLinkedin />
+              </span>
+            </Link>
+            <Link href="https://github.com/rushilp2311">
+              <span className="github">
+                <FaGithubSquare />
+              </span>
+            </Link>
+            <Link href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=rushilp2311@gmail.com&tf=1">
+              <span className="gmail">
+                <SiGmail />
+              </span>
+            </Link>
           </div>
         </div>
       </Fade>

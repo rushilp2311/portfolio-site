@@ -3,6 +3,7 @@ import Header from "../src/components/Header";
 import Fade from "react-reveal/Fade";
 import Head from "next/head";
 import { useRouter } from "next/router";
+
 const Page = () => {
   const router = useRouter();
   return (

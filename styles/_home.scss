@@ -22,7 +22,6 @@
     }
     .btn-blue {
       margin-top: 40px;
-      max-width: 200px;
       a {
         text-decoration: none;
         color: $white;
@@ -71,6 +70,7 @@
         margin-top: 80px;
       }
       .project-link {
+        cursor: pointer;
         margin-top: 150px;
         width: 100%;
         text-align: center;
