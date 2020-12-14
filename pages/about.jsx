@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Fade from "react-reveal/Fade";
+import Head from "next/head";
 import Header from "../src/components/Header";
 import { FaReact, FaNodeJs, FaSass } from "react-icons/fa";
 import { useRouter } from "next/router";
@@ -29,6 +30,11 @@ const About = () => {
 
   return (
     <div className="about-container">
+      <Head>
+        <html lang="en" />
+        <title>About Me | Rushil Patel</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Header />
       <Fade bottom cascade>
         <div className="about-section">
@@ -162,7 +168,12 @@ const About = () => {
           </div>
         </div>
         <div className="project">
-          <p className="project-link">Checkout my Work</p>
+          <button
+            className="btn-yellow"
+            onClick={(e) => router.push("/projects")}
+          >
+            Checkout my Work
+          </button>
         </div>
       </Fade>
     </div>

@@ -19,15 +19,17 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      p {
+        font-size: 20px;
+        margin-top: 25px;
+      }
       p:nth-child(1) {
         font-size: 35px;
         font-weight: 900;
         margin-bottom: 10px;
         text-align: center;
         text-decoration: underline;
-      }
-      p {
-        font-size: 20px;
+        margin-top: 0px;
       }
       .btn-white {
         margin-top: 20px;
@@ -87,6 +89,7 @@
       grid-template-columns: auto auto;
       grid-row-gap: 20px;
       padding: 10px;
+      margin-top: 25px;
     }
     .skill {
       display: flex;
@@ -99,12 +102,15 @@
     }
   }
   .project {
-    .project-link {
-      cursor: pointer;
-      margin-top: 30px;
-      text-align: center;
-      font-size: 24px;
-      text-decoration: underline;
+    .btn-yellow {
+      margin-left: 50px;
+      margin-top: 40px;
+      @include btn($yellow, $primary-color, 20px);
+      width: 400px !important;
+    }
+    .btn-yellow:hover {
+      transition-duration: 0.4s;
+      background-color: darken($color: $yellow, $amount: 10);
     }
   }
 }
@@ -171,7 +177,7 @@
         text-align: left;
         margin-top: 10px;
         ul {
-          margin-top: 0px;
+          margin: 0px;
           font-size: 25px;
         }
       }
@@ -194,13 +200,15 @@
       }
     }
     .project {
-      .project-link {
-        cursor: pointer;
-        margin-top: 50px;
-        width: 100%;
-        text-align: center;
-        font-size: 44px;
-        text-decoration: underline;
+      padding-left: 180px;
+      .btn-yellow {
+        margin-top: 60px;
+        @include btn($yellow, $primary-color, 20px);
+        max-width: 300px !important;
+      }
+      .btn-yellow:hover {
+        transition-duration: 0.4s;
+        background-color: darken($color: $yellow, $amount: 10);
       }
     }
   }
