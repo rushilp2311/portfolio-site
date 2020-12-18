@@ -1,61 +1,121 @@
 @import "_variables";
 @import "_mixins";
-
-.project-container {
-  border-radius: 4px;
+.main-project-container {
   display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  background-color: #fffffe;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-  .image-container {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    height: 200px;
-    border-bottom: 1px solid $primary-color;
-    background-color: white;
-    .image {
-      border-radius: 4px;
+  justify-content: center;
+  .project-container {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: #fffffe;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    .image-container {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
       height: 200px;
-      width: 100%;
-      object-fit: contain;
+      max-width: 400px;
+
+      background-color: white;
+      .image {
+        border-radius: 4px;
+        height: 200px;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .project-info {
+      margin-top: 10px;
+
+      .project-heading {
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+      }
+      .project-description {
+        opacity: 0.7;
+        margin-top: 10px;
+        padding: 5px 10px;
+      }
+      .tech-heading {
+        padding: 5px 10px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .techUsed {
+        padding: 5px 10px;
+        margin: 0;
+        list-style: none;
+        li {
+          opacity: 0.7;
+          font-size: 18px;
+          font-weight: 500;
+          display: inline-block;
+          margin-right: 15px;
+        }
+      }
+      .project-note {
+        // margin-top: 10px;
+        padding: 5px 10px;
+        color: rgb(228, 36, 36);
+      }
+      .buttons {
+        .btn-blue {
+          margin: 10px 10px;
+          @include btn($secondary-color, $white, 20px);
+        }
+        .btn-primary {
+          margin: 10px 10px;
+          @include btn($primary-color, $white, 20px);
+        }
+      }
     }
   }
-  .project-info {
-    margin-top: 10px;
-    .project-heading {
-      font-size: 25px;
-      font-weight: 700;
-      text-align: center;
-    }
-    .project-description {
-      margin-top: 10px;
-      padding: 5px 10px;
-    }
-    .tech-heading {
-      padding: 5px 10px;
-      font-size: 18px;
-      font-weight: 700;
-    }
-    .techUsed {
-      padding: 5px 10px;
-      margin: 0;
-      list-style: none;
-      li {
-        font-size: 18px;
-        font-weight: 500;
-        display: inline-block;
-        margin-right: 15px;
+}
+@media (min-width: 1371px) {
+  .main-project-container {
+    display: flex;
+    justify-content: center;
+    .project-container {
+      padding: 10px 30px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+      height: 400px;
+      width: 50%;
+
+      .image-container {
+        height: 400px;
+        border: 0;
+        .image {
+          height: 400px;
+          width: 100%;
+        }
       }
-    }
-    .buttons {
-      .btn-blue {
-        margin: 10px 10px;
-        @include btn($secondary-color, $white, 20px);
-      }
-      .btn-primary {
-        margin: 10px 10px;
-        @include btn($primary-color, $white, 20px);
+      .project-info {
+        margin-left: 70px;
+        .project-heading {
+          padding: 5px 10px;
+          text-align: left;
+          font-size: 35px;
+        }
+        .project-description {
+          font-size: 22px;
+        }
+        .tech-heading {
+          font-size: 24px;
+        }
+        .techUsed {
+          padding: 5px 10px;
+
+          li {
+            font-size: 20px;
+          }
+        }
+        .buttons {
+          margin-top: 10px;
+        }
       }
     }
   }

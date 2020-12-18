@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Header from "../src/components/Header";
 import Head from "next/head";
+import Link from "next/link";
 import Project from "../src/components/Project";
 const Projects = () => {
   useEffect(() => {
@@ -28,44 +29,55 @@ const Projects = () => {
           description="This a bug tracking website build using MERN stack. Collaborate with your team to make your software bug free."
           liveLink="https://focused-ramanujan-1df165.netlify.app/"
           codeLink="https://github.com/rushilp2311/bug-trackr"
+          note=""
           image="/static/bugtrackr.png"
           technologiesUsed={[
-            "HTML/CSS",
+            "SCSS",
             "Javascript",
             "ReactJs",
-            "NodeJs/ExpressJs",
+            "Postman",
+            "NodeJs",
+            "ExpressJs",
             "Git",
           ]}
         />
         <Project
-          name="Bug Trackr"
-          description="This a bug tracking website build using MERN stack. Collaborate with your team to make your software bug free."
-          liveLink=""
-          codeLink=""
-          image="/static/bugtrackr.png"
+          name="Mom&Pop BookStore"
+          description="The Ecommerce site for buying books online. Built using ReactJs in Frontend and Spring Boot in Backend. This was a group project."
+          liveLink="https://frontend-4413.herokuapp.com/"
+          codeLink="https://github.com/rushilp2311/4413-Frontend"
+          note="Might take couple of reload. The site is deployed on heroku and needs to restart dyno."
+          image="/static/book.png"
           technologiesUsed={[
-            "HTML/CSS",
+            "SCSS",
             "Javascript",
             "ReactJs",
-            "NodeJs/ExpressJs",
+            "Spring Boot",
+            "Postman",
             "Git",
           ]}
         />
         <Project
-          name="Bug Trackr"
-          description="This a bug tracking website build using MERN stack. Collaborate with your team to make your software bug free."
-          liveLink=""
-          codeLink=""
-          image="/static/bugtrackr.png"
+          name="Think Piece"
+          description="This is blogging website build with React and Firebase. The site has OAuth Login with Google and uses SCSS for styling"
+          liveLink="https://think-piece-d4578.firebaseapp.com/"
+          codeLink="https://github.com/rushilp2311/Think-Piece"
+          note=""
+          image="/static/think.png"
           technologiesUsed={[
-            "HTML/CSS",
+            "SCSS",
             "Javascript",
             "ReactJs",
-            "NodeJs/ExpressJs",
+            "Firebase",
             "Git",
           ]}
         />
       </div>
+      <Link href="https://github.com/rushilp2311">
+        <a target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+          <p className="other-projects">Checkout my other projects on Github</p>
+        </a>
+      </Link>
     </div>
   );
 };
