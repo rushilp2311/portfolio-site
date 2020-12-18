@@ -17,6 +17,7 @@ import {
   SiFigma,
   SiRedux,
   SiJest,
+  SiGit,
 } from "react-icons/si";
 const About = () => {
   const router = useRouter();
@@ -131,9 +132,9 @@ const About = () => {
             </p>
             <p className="skill">
               <span>
-                <SiFirebase />
+                <SiGit />
               </span>
-              Firebase
+              Version Control
             </p>
             <p className="skill">
               <span>
