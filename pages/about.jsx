@@ -19,6 +19,7 @@ import {
   SiJest,
   SiGit,
 } from "react-icons/si";
+
 const About = () => {
   const router = useRouter();
   useEffect(() => {
@@ -34,7 +35,11 @@ const About = () => {
       <Head>
         <html lang="en" />
         <title>About Me | Rushil Patel</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="viewport"
+          content="initial-scale=1.0, width=device-width"
+          key="viewport"
+        />
       </Head>
       <Header />
       <Fade bottom cascade>
@@ -42,7 +47,7 @@ const About = () => {
           <div className="image-container">
             <Image
               src="/static/logo.png"
-              loading="eager"
+              priority
               layout="fixed"
               quality={100}
               width={150}
