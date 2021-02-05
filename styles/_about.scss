@@ -47,6 +47,7 @@
       width: 100%;
       font-size: 18px;
     }
+
     p:nth-child(1) {
       margin-top: 30px;
       font-size: 35px;
@@ -55,22 +56,23 @@
       text-align: center;
       text-decoration: underline;
     }
-    p:nth-child(2) {
-      margin-top: 25px;
-      text-align: left;
-      font-size: 25px;
-      font-weight: 700;
-    }
-    p:nth-child(3) {
-      margin-top: 5px;
-      font-size: 20px;
-      font-style: italic;
-    }
-    p:nth-child(4) {
-      text-align: left;
-      margin-top: 10px;
-      ul {
-        margin-top: 0px;
+    .job {
+      margin-top: 50px;
+      max-width: 700px;
+      p {
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: left;
+      }
+      .job__title {
+        margin-bottom: 20px !important;
+        font-size: 28px !important;
+      }
+      .job__points {
+        font-size: 22px;
+      }
+      .company__name {
+        font-size: 22px;
       }
     }
   }
@@ -162,23 +164,20 @@
         margin-top: 30px;
         font-size: 55px;
       }
-      p:nth-child(2) {
-        margin-top: 30px;
-        text-align: left;
-        font-size: 30px;
-        font-weight: 700;
-      }
-      p:nth-child(3) {
-        margin-top: 5px;
-        font-size: 25px;
-        font-style: italic;
-      }
-      p:nth-child(4) {
-        text-align: left;
-        margin-top: 10px;
-        ul {
-          margin: 0px;
-          font-size: 25px;
+      .job {
+        margin-top: 50px;
+        width: 700px;
+        p {
+          margin: 0 !important;
+          padding: 0 !important;
+          text-align: left;
+        }
+        .job__title {
+          margin-bottom: 20px !important;
+          font-size: 28px !important;
+        }
+        .job__points {
+          font-size: 22px;
         }
       }
     }

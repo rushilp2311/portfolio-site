@@ -70,11 +70,24 @@ const About = () => {
         </div>
         <div className="experience-section">
           <p>Experience</p>
-          <p>React Developer</p>
-          <p>Drawpi.com</p>
-          <p>
-            <ul>
-              <li>React Developer Drawpi.com</li>
+          <div className="job">
+            <p className="job__title">Frontend Developer</p>
+            <p className="company__name">Moralyzer</p>
+
+            <ul className="job__points">
+              <li>
+                Developed and implement highly-responsive user interface
+                components using React concepts.
+              </li>
+              <li> Using Redux for state management.</li>
+              <li> Using Material UI for theming.</li>
+            </ul>
+          </div>
+          <div className="job">
+            <p className="job__title">React Developer</p>
+            <p className="company__name">Drawpi.com</p>
+
+            <ul className="job__points">
               <li>
                 Developed and implement highly-responsive user interface
                 components using React concepts.
@@ -82,7 +95,7 @@ const About = () => {
               <li> Monitoring and improving front-end perfomance.</li>
               <li> Troubleshooting and debugging application codes.</li>
             </ul>
-          </p>
+          </div>
         </div>
         <div className="skills-section">
           <p className="skills-heading">Skills</p>
