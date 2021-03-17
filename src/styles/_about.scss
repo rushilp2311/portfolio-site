@@ -1,0 +1,48 @@
+@import "_variables";
+
+.about__container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  .title {
+    text-align: center;
+  }
+  .info {
+    margin-top: 4rem;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 2rem;
+   
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        border-radius: 4px;
+      }
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about__container {
+    .title {
+      text-align: center;
+    }
+    .info {
+      display: block;
+    }
+  }
+}

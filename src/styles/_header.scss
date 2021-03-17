@@ -1,0 +1,72 @@
+@import "_variables";
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    text-align: center;
+  }
+  .header__left {
+    cursor: pointer;
+    p {
+      margin: 0;
+    }
+    .logo {
+      text-align: center;
+    }
+  }
+  .header__right {
+    display: flex;
+    align-items: space-between;
+    margin-top: 10px;
+    a {
+      color: var(--text-color);
+      text-decoration: none;
+    }
+    .linkedin {
+      margin-right: 30px;
+      font-size: 25px;
+      height: 24px;
+      width: 24px;
+    }
+    .github {
+      margin-right: 30px;
+      font-size: 24px;
+    }
+    .gmail {
+      font-size: 23px;
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .header {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    .header__left {
+      margin: 0;
+      p {
+        margin: 0;
+      }
+    }
+    .header__right {
+      .linkedin {
+        cursor: pointer;
+        font-size: 25px;
+      }
+      .github {
+        cursor: pointer;
+        font-size: 25px;
+      }
+      .gmail {
+        cursor: pointer;
+        font-size: 25px;
+      }
+    }
+  }
+}
