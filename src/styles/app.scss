@@ -4,6 +4,7 @@
 @import "_main";
 @import "_projects";
 @import "_about";
+@import "_work";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
 // * {
@@ -64,6 +65,7 @@ body {
   grid-template-areas:
     ". Navigation Navigation Navigation Navigation Navigation ."
     ". Welcome Welcome Welcome Welcome Welcome ."
+    ". Work Work Work Work Work ."
     ". Project Project Project Project Project ."
     ". About About About About About .";
   height: 100%;
@@ -80,6 +82,9 @@ body {
   align-items: stretch;
   justify-items: center;
   height: 70vh;
+}
+.Work {
+  grid-area: Work;
 }
 
 .Project {

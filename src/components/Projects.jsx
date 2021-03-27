@@ -1,4 +1,7 @@
 import React from "react";
+import Book from "../assets/book.png";
+import Think from "../assets/think.png";
+import Issue from "../assets/issue.png";
 
 function Projects() {
   return (
@@ -6,53 +9,101 @@ function Projects() {
       <h2 className="title">Some of my Projects</h2>
       <section
         className="card"
-        data-aos="fade-right"
+        // data-aos="fade-right"
         style={{ overflowX: "hidden" }}
       >
-        <img src="https://picsum.photos/id/237/570/400" alt="card 1" />
+        <img src={Issue} alt="card 1" />
         <div>
           <h3>Issue Tracker</h3>
-          <p>
-            Issue Tracking Project similar to JIRA build with ReactJS, NodeJS,
-            Express, PostgresSQL, SCSS. It is primarily build to track issues
-            among teams. Some of the functionalities include sorting issues
-            based on sprint, chat and a beautiful dashboard visualizing your
-            progress.
-          </p>
+          <ul>
+            <li>
+              Issue Tracking Project similar to JIRA build with . It is
+              primarily build to track issues among teams.
+            </li>
+            <li>
+              Some of the functionalities include sorting issues based on
+              sprint, chat and a beautiful dashboard visualizing your progress.
+            </li>
+
+            <li>
+              Tech Used: ReactJS, NodeJS, Express, PostgresSQL, SCSS, Redux
+            </li>
+          </ul>
           <p style={{ color: "red" }}>Note: Work in Progress</p>
           <div className="btns">
-            <p className="live__btn">Live (Coming Soon)</p>
-            <p className="code__btn">Code</p>
+            <p className="live__btn disabled__btn">Live</p>
+            <a
+              href="https://github.com/rushilp2311"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="code__btn">Code</p>
+            </a>
           </div>
         </div>
       </section>
       <section className="card" data-aos="fade-left">
-        <img src="https://picsum.photos/id/231/570/400" alt="card 1" />
+        <img src={Book} alt="card 1" />
         <div>
           <h3>Mom & Pop Book Store</h3>
-          <p>
-            Mom & Pop Book Store 
+          <ul>
+            <li>Build Online Ecommerce Website for Books.</li>
+            <li>
+              Used over 28000 books data for the website without affecting the
+              web performance. Implemented pagination on both frontend and
+              backend to reduce network payload.
+            </li>
+            <li>Collaborated with team using Git and Github.</li>
+            <li>Tech Used: ReactJS, Spring Boot, IBM DB2.</li>
+          </ul>
+          <p style={{ color: "red" }}>
+            Note: Might take few seconds to load. Deployed on Free Tier on
+            Heroku
           </p>
           <div className="btns">
-            <p className="live__btn">Live</p>
-            <p className="code__btn">Code</p>
+            <a
+              href="https://frontend-4413.herokuapp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="live__btn">Live</p>
+            </a>
+            <a
+              href="https://github.com/rushilp2311/4413-Frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="code__btn">Code</p>
+            </a>
           </div>
         </div>
       </section>
-      
-      <section className="card" data-aos="fade-left">
-        <img src="https://picsum.photos/id/27/570/400" alt="card 1" />
+
+      <section className="card" data-aos="fade-right">
+        <img src={Think} alt="card 1" />
         <div>
-          <h3>Acrylic Painting Four</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            ducimus nihil quia eum at omnis cum et numquam debitis labore! Iusto
-            minima itaque inventore cupiditate, explicabo nam magnam quis
-            nostrum!
-          </p>
+          <h3>Think Piece</h3>
+          <ul>
+            <li>Online Blogging website.</li>
+            <li>Implemented OAuth with Google. Live update of data.</li>
+            <li>Built with React and Google Firebase.</li>
+            <li>Tech Used: ReactJS, SCSS, Google Firebase.</li>
+          </ul>
           <div className="btns">
-            <p className="live__btn">Live</p>
-            <p className="code__btn">Code</p>
+            <a
+              href="https://think-piece-d4578.firebaseapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="live__btn">Live</p>
+            </a>
+            <a
+              href="https://github.com/rushilp2311/Think-Piece"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="code__btn">Code</p>
+            </a>
           </div>
         </div>
       </section>

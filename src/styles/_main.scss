@@ -52,10 +52,13 @@
 @media only screen and (max-width: 600px) {
   .main__container {
     text-align: left;
-
     .title {
       margin-top: 10px;
       width: 100%;
+    }
+    .more {
+      text-align: center;
+      margin-top: 100px;
     }
   }
 }
