@@ -11,9 +11,11 @@ function Main() {
         </span>
       </h2>
       <h1 className="title">
-        I am a Final Year Comp. Science Student based in Toronto, Canada
+        I am a Final Year Comp. Science Student graduating in May 2021.
       </h1>
-      <h5 style={{ marginTop: "10px" }}>Graduating in May 2021</h5>
+      <h5 style={{ marginTop: "20px" }}>
+        Actively Looking for a full-time oppurtunities
+      </h5>
       <div className="more">
         <p>
           Checkout my work

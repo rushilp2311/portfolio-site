@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import About from './components/About';
+import Work from "./components/Work";
 
 function App() {
   AOS.init({
@@ -19,6 +20,9 @@ function App() {
       </div>
       <div class="Welcome">
         <Main />
+      </div>
+      <div class="Work">
+        <Work />
       </div>
       <div class="Project">
         <Projects />
