@@ -10,11 +10,16 @@ function Work() {
 
         <ul className="job__points">
           <li>
-            Developed and implement highly-responsive user interface components
-            using React concepts.
+            Improved Web Performance of the website using Lazy Loading,
+            Optimizing Javascript, Optimizing images and videos, which resulted
+            in an increase in performance score from 1-5 to 40.
           </li>
-          <li> Using Redux for state management.</li>
-          <li> Using Material UI for theming.</li>
+          <li>
+            Cached Images and Videos using AWS Cloudfront. Saw significant
+            improvements in performance.
+          </li>
+          <li>Using Redux for state management.</li>
+          <li>Collaborating with the team using Git and Github.</li>
         </ul>
       </div>
       <div className="job">
