@@ -11,12 +11,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--secondary-color);
-    border: 1px solid var(--border-color);
-
     gap: 2rem;
     width: 70%;
-    margin-top: 1em;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-top: 3em;
+    
     border-radius: 4px;
     img {
       width: 100%;
@@ -61,14 +59,12 @@
         }
         .disabled__btn {
           background-color: var(--secondary-color) !important;
-          border: 1px solid var(--border-color);
           color: var(--text-color);
         }
       }
     }
   }
   .card:nth-child(even) {
-    border: 1px solid var(--border-color);
     img {
       order: 2;
       border-top-left-radius: 0px;
@@ -109,7 +105,6 @@
         }
         .disabled__btn {
           background-color: var(--secondary-color) !important;
-          border: 1px solid var(--border-color);
           color: var(--text-color);
         }
       }

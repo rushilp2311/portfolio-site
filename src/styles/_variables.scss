@@ -2,4 +2,19 @@ $dark-grey: #121212;
 $grey: lighten(#121212, 5);
 $white: #f8f9fa;
 
-$poppins: "Poppins", sans-serif;
+@font-face {
+  font-family: "circular";
+  src: url("../assets/CircularStd-Book.woff2");
+}
+@font-face {
+  font-family: "circular-black";
+  src: url("../assets/CircularStd-Black.woff2");
+}
+@font-face {
+  font-family: "circular-medium";
+  src: url("../assets/CircularStd-Medium.woff2");
+}
+
+$circular: "circular", sans-serif;
+$circular-black: "circular-black", sans-serif;
+$circular-medium: "circular-medium", sans-serif;

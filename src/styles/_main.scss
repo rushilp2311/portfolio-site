@@ -10,8 +10,11 @@
   .title {
     text-align: center;
     margin-top: 40px;
+    font-family: $circular-black;
     width: 70%;
-    font-weight: 900;
+    h1 {
+      font-weight: 900;
+    }
   }
   .more {
     text-align: center;
@@ -54,6 +57,10 @@
     text-align: left;
     .title {
       margin-top: 10px;
+      text-align: left;
+      h5 {
+        text-align: center !important;
+      }
       width: 100%;
     }
     .more {
