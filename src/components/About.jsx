@@ -36,8 +36,8 @@ function About() {
             Using Redux, AWS, Material UI.
           </p>
           <p>
-            As for my future, I am seeking to work as a Frontend Developer / Backend Developer
-            Full Stack Developer with a diverse team.
+            As for my future, I am seeking to work as a Frontend Developer /
+            Backend Developer / Full Stack Developer with a diverse team.
           </p>
         </div>
       </div>
