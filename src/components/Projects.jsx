@@ -33,7 +33,7 @@ function Projects() {
           <div className="btns">
             <p className="live__btn disabled__btn">Live</p>
             <a
-              href="https://github.com/rushilp2311"
+              href="https://github.com/rushilp2311/issue_tracker"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -69,7 +69,7 @@ function Projects() {
               <p className="live__btn">Live</p>
             </a>
             <a
-              href="https://github.com/rushilp2311/4413-Frontend"
+              href="https://github.com/rushilp2311/4413-Backend"
               target="_blank"
               rel="noopener noreferrer"
             >
